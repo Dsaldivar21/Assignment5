@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from api.models import models, schemas
 from api.controllers import orders
-from api.dependencies import engine, get_db
+from api.dependencies.database import engine, get_db
 app = FastAPI()
 
 models.Base.metadata.create_all(bind=engine)

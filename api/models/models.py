@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String, DECIMAL, DATETIME
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from api.dependencies import Base
+from api.dependencies.database import Base
 
 
 class Sandwich(Base):
